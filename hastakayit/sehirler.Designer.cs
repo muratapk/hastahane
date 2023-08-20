@@ -36,6 +36,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sehirAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +107,26 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.sehirAdi});
             this.dataGridView1.Location = new System.Drawing.Point(83, 141);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(488, 162);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Sıra No";
+            this.Id.Name = "Id";
+            // 
+            // sehirAdi
+            // 
+            this.sehirAdi.DataPropertyName = "sehirAdi";
+            this.sehirAdi.HeaderText = "Şehir Adı";
+            this.sehirAdi.Name = "sehirAdi";
             // 
             // sehirler
             // 
@@ -144,5 +161,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sehirAdi;
     }
 }

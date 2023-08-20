@@ -16,7 +16,7 @@ namespace hastakayit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sehirler());
+            Application.Run(new HastaTablosu());
         }
     }
 }
